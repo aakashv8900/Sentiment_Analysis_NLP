@@ -136,7 +136,7 @@ import pymongo
 from pymongo import MongoClient
 
 app = Flask(__name__)
-app.config['MONGO_URI'] = 'mongodb+srv://aakashv8900:aakashv8900@cluster0.2r0iu.mongodb.net/sentiments?retryWrites=true&w=majority'
+app.config['MONGO_URI'] = 'mongodb+srv://username:password@cluster0.2r0iu.mongodb.net/sentiments?retryWrites=true&w=majority'
 app.config['MONGO_DBNAME'] = 'sentiments'
 mongo = PyMongo(app)
 db = mongo.db
